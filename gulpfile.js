@@ -14,6 +14,7 @@ let rename = require("gulp-rename");
 let fileinclude = require("gulp-file-include");
 let clean_css = require("gulp-clean-css");
 let newer = require('gulp-newer');
+let ghPages = require('gh-pages');
 
 let version = require('gulp-version-number');
 
@@ -295,6 +296,11 @@ function htmlBuild() {
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream());
 }
+
+function deploy(cb) {
+	ghPages.publish('motaksy', cb);
+}
+
 let fontsBuild = gulp.series(fonts_otf, fonts, fontstyle);
 let buildDev = gulp.series(clean, gulp.parallel(fontsBuild, html, css, js, favicon, images));
 let watch = gulp.series(buildDev, gulp.parallel(watchFiles, browserSync));
@@ -305,3 +311,4 @@ exports.fonts = fontsBuild;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+exports.deploy = deploy;
