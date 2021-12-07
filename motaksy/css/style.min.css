@@ -237,7 +237,7 @@ section {
 }
 @media (max-width: 767.98px) {
   ._container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 }
 
@@ -1007,6 +1007,7 @@ img {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 5rem;
 }
 .footer__bottom-link {
@@ -1169,6 +1170,11 @@ body.menu-active .menu__body::before {
   font-weight: 600;
   line-height: 1.2;
   color: #fafafa;
+}
+@media (max-width: 479.98px) {
+  .intro__title {
+    font-size: 3.8rem;
+  }
 }
 .intro__text, .intro__title {
   margin-bottom: 3rem;

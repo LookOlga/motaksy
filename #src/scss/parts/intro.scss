@@ -30,7 +30,10 @@
     font-size: 4.8rem;
     font-weight: 600;
     line-height: 1.2;
-    color: $whiteColor;;
+    color: $whiteColor;
+    @media (max-width: $md4+px) {
+      font-size: 3.8rem;
+    }
   }
   &__text, &__title  {
     margin-bottom: 3rem;
