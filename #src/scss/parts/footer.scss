@@ -1,6 +1,11 @@
 .footer {
   background-color: $blueGreyColor;
   padding: 8rem 0 2rem;
+  &__logo-link {
+    img {
+      width: 150px;
+    }
+  }
   &__up {
     display: flex;
     flex-wrap: wrap;
