@@ -965,7 +965,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #f1f7ff;
+  background-color: #fff;
   border-bottom: 1px solid #d7d7d7;
 }
 .header__body {
@@ -974,10 +974,16 @@ img {
   align-items: center;
   min-height: 80px;
 }
+.header__logo-link img {
+  width: 150px;
+}
 
 .footer {
   background-color: #f1f7ff;
   padding: 8rem 0 2rem;
+}
+.footer__logo-link img {
+  width: 150px;
 }
 .footer__up {
   display: flex;
