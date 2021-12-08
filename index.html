@@ -103,7 +103,7 @@
 					</nav>
 				</div>
 				<div class="header__actions">
-					<button type="button" class="header__btn primary-btn">Get a quote</button>
+					<button type="button" class="header__btn primary-btn primary-btn--small">Get a quote</button>
 				</div>
 				<button type="button" class="icon-menu">
 					<span></span>
@@ -313,6 +313,36 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="contact-us">
+            <div class="contact-us__container _container">
+               <div class="contact-us__text">
+                   <h2 class="contact-us__title title">Do you have project for us?</h2>
+                   <p class="contact-us__desc">
+                       Hi, I’m Magda, Account Executive at Miquido. Fill in the form to the right and we’ll get in touch with you soon!
+                   </p>
+               </div>
+                <form action="#" method="POST" class="contact-us__form form" autocomplete="off">
+                    <div class="form__group">
+                        <input id="name" type="text" name="name" class="form__input input _req" data-error="Please enter your name" placeholder="Name">
+                        <span class="form__error"></span>
+                    </div>
+                    <div class="form__group">
+                        <input id="email" name="email" type="text" class="form__input input _req _email" data-error="Please enter your e-mail" placeholder="E-mail">
+                        <span class="form__error"></span>
+                    </div>
+                    <div class="form__group">
+                        <input id="tel" type="text" name="tel" class="form__input input _digital" placeholder="Phone">
+                        <span class="form__error"></span>
+                    </div>
+                    <div class="form__group">
+                        <textarea id="message" rows="10" type="text" name="message" class="form__textarea input _req" data-error="Please enter your message" placeholder="Message"></textarea>
+                        <span class="form__error"></span>
+                    </div>
+                    <button class=" form__button primary-btn">Send</button>
+                </form>
             </div>
         </section>
 
