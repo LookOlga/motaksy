@@ -226,7 +226,7 @@ section {
 }
 @media (max-width: 767.98px) {
   section {
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -257,11 +257,7 @@ section {
 .form__input, .form__textarea {
   border: 1px solid #fafafa;
   padding: 8px;
-}
-@media (min-width: 767.98px) {
-  .form__input, .form__textarea {
-    width: 100%;
-  }
+  width: 100%;
 }
 .form__input {
   height: 5rem;
@@ -1437,6 +1433,9 @@ body.menu-active .menu__body::before {
   .contact-us__container {
     display: flex;
   }
+}
+.contact-us__text {
+  margin-bottom: 5rem;
 }
 @media (min-width: 991.98px) {
   .contact-us__text {
