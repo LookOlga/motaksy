@@ -28,7 +28,7 @@ $md4: 479.98;
 
 $headingColor: #0c1636;
 $textColor: #76777d;
-$primaryColor: #50e3c2;
+$primaryColor: #ff3c81;
 $secondaryColor: #5375bc;
 $whiteColor: #fafafa;
 $blueGreyColor: #f1f7ff;
@@ -114,6 +114,7 @@ section {
 @import "./parts/stat";
 @import "parts/dev-numbers";
 @import "parts/industries";
+@import "parts/contact-us";
 //</PAGE & ELEMENTS STYLES>====================================================================================================
 
 //<MAIN SECTION>====================================================================================================

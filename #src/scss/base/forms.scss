@@ -1,16 +1,32 @@
 //<FORM ()>====================================================================================================
 .form {
-	&__row {
+	padding: 5rem;
+	background-color: $secondaryColor;
+	border-radius: 1rem;
+	&__group {
+		margin-bottom: 2rem;
 	}
-	&__column {
+	&__label {
+		font-size: 2rem;
+		font-weight: 600;
+		color: $whiteColor;
 	}
-	&__line {
+
+	&__input, &__textarea {
+		border: 1px solid $whiteColor;
+		padding: 8px;
+		@media(min-width: $md3+px) {
+			width: 100%;
+		}
 	}
 	&__input {
+		height: 5rem;
 	}
 	&__button {
+		margin-top: 2rem;
 	}
 	&__error {
+		color: $whiteColor;
 	}
 }
 
@@ -135,17 +151,16 @@ textarea {
 }
 .input {
 	border-radius: 0 !important;
-	width: 100%;
 	display: block;
-	padding: 0px 20px;
 	&._focus {
+		border: 1px solid black;
 	}
 	&._error {
+		border: 1px solid red;
 	}
 }
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
 }
 //</INPUT>====================================================================================================
 

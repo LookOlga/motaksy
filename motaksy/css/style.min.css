@@ -241,6 +241,38 @@ section {
   }
 }
 
+.form {
+  padding: 5rem;
+  background-color: #5375bc;
+  border-radius: 1rem;
+}
+.form__group {
+  margin-bottom: 2rem;
+}
+.form__label {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fafafa;
+}
+.form__input, .form__textarea {
+  border: 1px solid #fafafa;
+  padding: 8px;
+}
+@media (min-width: 767.98px) {
+  .form__input, .form__textarea {
+    width: 100%;
+  }
+}
+.form__input {
+  height: 5rem;
+}
+.form__button {
+  margin-top: 2rem;
+}
+.form__error {
+  color: #fafafa;
+}
+
 .button {
   display: inline-flex;
   padding: 0px 0px;
@@ -352,13 +384,17 @@ textarea:focus {
 
 .input {
   border-radius: 0 !important;
-  width: 100%;
   display: block;
-  padding: 0px 20px;
 }
+.input._focus {
+  border: 1px solid black;
+}
+.input._error {
+  border: 1px solid red;
+}
+
 textarea.input {
   resize: none;
-  padding: 0px 0px;
 }
 
 .checkbox {
@@ -789,14 +825,24 @@ body.ie ._ibg img {
 }
 
 .primary-btn {
-  background-color: #50e3c2;
-  color: #0f3d33;
-  padding: 1rem 1.5rem;
+  min-width: 20rem;
+  background-color: #ff3c81;
+  color: #eaeaea;
+  padding: 1.5rem;
   border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.primary-btn:hover {
+  background-color: #ff186a;
+  color: #fff;
+}
+.primary-btn--small {
+  min-width: 15rem;
+  padding: 1rem 1.5rem;
 }
 
 .btn-link {
-  color: #50e3c2;
+  color: #ff3c81;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -805,8 +851,8 @@ body.ie ._ibg img {
   display: inline-block;
   width: 8px;
   height: 8px;
-  border-bottom: 2px solid #50e3c2;
-  border-right: 2px solid #50e3c2;
+  border-bottom: 2px solid #ff3c81;
+  border-right: 2px solid #ff3c81;
   transform: rotate(-45deg) translateY(-30%);
   margin-left: 6px;
 }
@@ -870,7 +916,6 @@ img {
 
 ._tabs-item._active {
   color: #5375bc;
-  text-decoration: underline;
 }
 
 ._tabs-block._active {
@@ -1102,10 +1147,10 @@ img {
   }
   .menu__item:hover .menu__arrow {
     transform: rotate(-45deg);
-    border-color: #50e3c2;
+    border-color: #ff3c81;
   }
   .menu__item:hover .menu__link {
-    color: #50e3c2;
+    color: #ff3c81;
   }
 }
 .menu__arrow {
@@ -1382,6 +1427,26 @@ body.menu-active .menu__body::before {
   .industries__content {
     width: calc(55% - 8rem);
     margin-left: 8rem;
+  }
+}
+
+.contact-us {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='470' preserveAspectRatio='none' viewBox='0 0 1920 470'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1105%26quot%3b)' fill='none'%3e%3cpath d='M -827.8794065838104%2c240 C -731.88%2c227.8 -539.88%2c153 -347.87940658381035%2c179 C -155.88%2c205 -59.88%2c377.2 132.12059341618965%2c370 C 324.12%2c362.8 420.12%2c146.4 612.1205934161896%2c143 C 804.12%2c139.6 900.12%2c344 1092.1205934161896%2c353 C 1284.12%2c362 1406.54%2c185.6 1572.1205934161896%2c188 C 1737.7%2c190.4 1850.42%2c329.6 1920%2c365' stroke='rgba(223%2c 223%2c 223%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -144.57846842101145%2c382 C -48.58%2c350.4 143.42%2c237.6 335.42153157898855%2c224 C 527.42%2c210.4 623.42%2c337.6 815.4215315789886%2c314 C 1007.42%2c290.4 1103.42%2c91.6 1295.4215315789886%2c106 C 1487.42%2c120.4 1583.42%2c365.2 1775.4215315789886%2c386 C 1967.42%2c406.8 2226.51%2c210.4 2255.4215315789884%2c210 C 2284.34%2c209.6 1987.08%2c349.2 1920%2c384' stroke='rgba(223%2c 223%2c 223%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -527.10603829889%2c126 C -431.11%2c165.2 -239.11%2c307.8 -47.10603829889003%2c322 C 144.89%2c336.2 240.89%2c209.4 432.89396170110996%2c197 C 624.89%2c184.6 720.89%2c268.4 912.89396170111%2c260 C 1104.89%2c251.6 1200.89%2c129.4 1392.89396170111%2c155 C 1584.89%2c180.6 1767.47%2c388.2 1872.89396170111%2c388 C 1978.32%2c387.8 1910.58%2c200.8 1920%2c154' stroke='rgba(223%2c 223%2c 223%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1105'%3e%3crect width='1920' height='470' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") center bottom no-repeat;
+}
+@media (min-width: 991.98px) {
+  .contact-us__container {
+    display: flex;
+  }
+}
+@media (min-width: 991.98px) {
+  .contact-us__text {
+    width: calc(60% - 8rem);
+    margin-right: 8rem;
+  }
+}
+@media (min-width: 991.98px) {
+  .contact-us__form {
+    width: 40%;
   }
 }
 
