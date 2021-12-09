@@ -221,6 +221,9 @@ body.ie {
 		transform: translate3d(0px, 0, 0);
 	}
 }
+.swiper-pagination-bullet-active {
+	background-color: $secondaryColor;
+}
 .swiper-button-lock {
 	display: none !important;
 }

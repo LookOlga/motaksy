@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let slider_about = new Swiper('.about__slider', {
+let slider_about = new Swiper('.slider', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -81,15 +81,22 @@ let slider_about = new Swiper('.about__slider', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.portfolio__pagination',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+		nextEl: '.portfolio__slider-btn--prev',
+		prevEl: '.portfolio__slider-btn--next',
 	},
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true
+	},
+	autoHeight: true,
+	loop: true,
+
 	/*
 	breakpoints: {
 		320: {
